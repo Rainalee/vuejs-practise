@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var arr1=['a','b','c'];
+		var arr2=['d','e'];
+		arr1.push(...arr2); 
+
+		console.log(arr1);    //["a", "b", "c", "d", "e"]  长度是5
+
+		// 但是如果不用语法糖的话
+		var arr3=['a','b','c'];
+		var arr4=['d','e'];
+		arr3.push(arr4); 
+		console.log(arr3);	//["a", "b", "c", Array(2)]  长度是4
+
+		// 以上便是区别
+
+	</script>
+</body>
+</html>
